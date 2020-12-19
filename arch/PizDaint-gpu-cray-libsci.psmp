@@ -35,6 +35,7 @@ LIBS    += -L$(LDIR)/libxsmm/1.14.0/lib -lxsmmf -lxsmm -ldl
 LIBS    += -L$(LDIR)/libxc/4.3.4/lib -lxcf03 -lxc
 LIBS    += -L$(LDIR)/libint/2.6.0/lib -lint2 -lstdc++
 LIBS    += -L$(FFTW_DIR)/lib -lfftw3
+
 INCS     = -I$(LDIR)/libelpa/2019.05.002_gpu/include/elpa_openmp-2019.05.002/modules
 INCS    += -I$(LDIR)/libelpa/2019.05.002_gpu/include/elpa_openmp-2019.05.002/elpa
 INCS    += -I$(LDIR)/libxsmm/1.14.0/include
@@ -57,7 +58,7 @@ FC       = ftn
 LD       = ftn
 AR       = ar -r
 ifeq (1,$(USE_CUDA))
-; NVCC     = nvcc
+  NVCC     = nvcc
 endif
 # === COMPILER FLAGS ===
 # detailed optimization description (for PizDaint GPU-partition!):
