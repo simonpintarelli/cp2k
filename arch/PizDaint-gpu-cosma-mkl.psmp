@@ -35,7 +35,7 @@ LIBS    += -L$(LDIR)/libelpa/2019.05.002_gpu/lib -lelpa_openmp
 LIBS    += -L$(LDIR)/libxsmm/1.14.0/lib -lxsmmf -lxsmm -ldl
 LIBS    += -L$(LDIR)/libxc/4.3.4/lib -lxcf03 -lxc
 LIBS    += -L$(LDIR)/libint/2.6.0/lib -lint2 -lstdc++
-LIBS    += -L$(COSMA_PATH)/lib64 -lcosma_pxgemm -lcosma -lgrid2grid -lTiled-MM -lcublas -lcudart -lrt
+LIBS    += -L$(COSMA_PATH)/lib64 -lcosma_pxgemm -lcosma -lgrid2grid
 LIBS    += -L$(FFTW_DIR)/lib -lfftw3
 LIBS    += -L${MKLROOT}/lib/intel64 -Wl,--no-as-needed -lmkl_scalapack_lp64 -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lmkl_blacs_intelmpi_lp64 -lgomp -lpthread -lm
 
