@@ -41,7 +41,6 @@ INCS    += -I$(LDIR)/libelpa/2019.05.002_gpu/include/elpa_openmp-2019.05.002/elp
 INCS    += -I$(LDIR)/libxsmm/1.14.0/include
 INCS    += -I$(LDIR)/libxc/4.3.4/include
 INCS    += -I$(LDIR)/libint/2.6.0/include
-INCS    += -I$(COSMA_PATH)/include
 INCS    += -I${MKLROOT}/include
 
 # === PRE-PROCESSOR FLAGS ===
