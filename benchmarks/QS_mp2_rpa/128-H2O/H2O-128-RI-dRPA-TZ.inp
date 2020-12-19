@@ -34,7 +34,7 @@
       &WF_CORRELATION
         METHOD  RI_RPA_GPW
         &RI_RPA
-          RPA_NUM_QUAD_POINTS    40
+          RPA_NUM_QUAD_POINTS    100
           &HF
             FRACTION  1.0
             &SCREENING
@@ -87,4 +87,3 @@
   RUN_TYPE    ENERGY
   PRINT_LEVEL MEDIUM
 &END GLOBAL
-
